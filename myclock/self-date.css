@@ -1,0 +1,177 @@
+body {
+    height: 100vh;
+   background-color: rgba(0, 0, 255, 0.556) ;
+   position: relative;
+  }
+  .maxContainer{
+        position: absolute;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-style:inset;
+        border-top-color: #f5f8f9c1;
+        border-left-color: #ecefedc1;
+        border-bottom-color: #8a0954;
+        border-right-color: #8a0954;
+        border-radius: 10%;
+  }
+
+.container{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    background: rgba(0, 128, 0, 0);
+    color: rgb(42, 219, 118);
+    display: flex;
+    justify-content: center;
+    line-height: 150px;
+    align-content: center;
+    border-radius: 50px;
+    
+}
+
+.secondi{
+    font-size: 35px;
+  align-items: center;
+  margin-top: 5px;
+}
+.container2{
+    display: flex;
+    border-radius: 40px;
+    justify-content: center;
+    line-height: 100px;
+    background-color: #8a095400;
+    font-size: 50px;
+    font-weight: bold;
+    width: 600px;
+    color: #8f126e;
+}
+.analogico {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    padding: 0rem;
+    border-radius: 50%;
+    margin: 5px auto;
+    border-color: black;
+    border-style: solid;
+  }
+  .outer-clock-face {
+    position: relative;
+    background: black;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  
+  .outer-clock-face::after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg)
+  }
+  
+  .outer-clock-face::after,
+  .outer-clock-face::before,
+  .outer-clock-face .marking{
+    content:'';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: rgb(175, 167, 186);
+    z-index: 0;
+    left: 49%;
+  }
+
+  .outer-clock-face .marking {
+    background:#1fbe3ac1;
+    width: 5px;
+  }
+  
+  .outer-clock-face .marking.marking-one {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    transform: rotate(30deg)
+  }
+  
+  .outer-clock-face .marking.marking-two {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  
+  .outer-clock-face .marking.marking-three {
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    transform: rotate(120deg)
+  }
+  
+  .outer-clock-face .marking.marking-four {
+    -webkit-transform: rotate(150deg);
+    -moz-transform: rotate(150deg);
+    transform: rotate(150deg)
+  }
+
+  .outer-clock-face .marking.marking-five {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+
+  .inner-clock-face {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: #0c0101;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    
+  }
+  
+  .inner-clock-face::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 18px;
+    margin-left: -6px;
+    margin-top: -4px;
+    background: #3ebc6ec1;
+    
+  }
+  .hand {
+    width: 50%;
+    right: 50%;
+    height: 6px;
+    background: #8a0954;
+    position: absolute;
+    top: 50%;
+    border-radius: 6px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  
+  .hand.hour-hand {
+    width: 30%;
+    z-index: 3;
+  }
+  
+  .hand.min-hand {
+    height: 3px;
+    z-index: 10;
+    width: 40%;
+  }
+  
+  .hand.second-hand {
+    background: rgb(214, 207, 202);
+    width: 45%;
+    height: 2px;
+  }

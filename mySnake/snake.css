@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Indie+Flower&family=Lobster&family=Orbitron:wght@400;600&family=Syne+Mono&display=swap');
+/*  "*" segna tutti  gli elementi */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #6577af;
+}
+
+.wrapper{
+    width: 65vmin;
+    height: 90vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #b5d696;
+    border-radius: 5px;
+    box-shadow: 0 20px 40px #021525;
+    
+}
+
+.game-details{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    padding: 8px 80px;
+    border-bottom-style: dashed;
+}
+
+.play-board{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background-color : #b5d696;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+     
+}
+
+.play-board .food{
+    background-color: #cf0e0e;
+    border-radius: 10px;
+}
+
+.play-board .head{
+    background-color: #0a096c;
+    
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    border-style: 10px solid;
+    
+    
+}
+ 
+.controls i{
+    padding: 12px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    width: calc(100% / 4);
+    cursor: pointer;
+    border-top-style: dashed;
+    
+}
+
+/* @media screen and (max-width: 800px) {
+    .wrapper{
+       width: 90vmin;
+       height: 115vmin;
+    }
+
+    .game-details{
+        font-size: 1rem;
+        padding: 15px, 27px;
+    }
+     .controls{
+        display:flex;
+     }
+     controls i{
+        padding: 15px 0;
+        font-size: 1rem;
+     }
+} */
